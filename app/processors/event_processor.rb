@@ -2,7 +2,7 @@ class EventProcessor
   def process(text)
     message = {
       "type": "text",
-      "text": "hello, world"
+      "text": text
     }
     return message
   end
