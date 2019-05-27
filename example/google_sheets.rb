@@ -12,7 +12,7 @@
   end
 
   def call_sheety_api
-    uri = URI("https://api.sheety.co/0b69f89c-6d55-4413-bde5-0b0d91b2627e")
+    uri = URI("https://api.sheety.co/f7e980e6-309f-4bee-a851-31fc915a1590")
     body = Net::HTTP.get(uri)
     JSON.parse(body)
   end
