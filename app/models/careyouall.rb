@@ -1,0 +1,2 @@
+class Careyouall < ApplicationRecord
+end

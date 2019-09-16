@@ -1,0 +1,82 @@
+<%= form_with(model: careyouall, local: true) do |form| %>
+  <% if careyouall.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(careyouall.errors.count, "error") %> prohibited this careyouall from being saved:</h2>
+
+      <ul>
+      <% careyouall.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :a1 %>
+    <%= form.text_field :a1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b1 %>
+    <%= form.text_field :b1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c1 %>
+    <%= form.text_field :c1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :d1 %>
+    <%= form.text_field :d1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :e1 %>
+    <%= form.text_field :e1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :f1 %>
+    <%= form.text_field :f1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :g1 %>
+    <%= form.text_field :g1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :h1 %>
+    <%= form.text_field :h1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :i1 %>
+    <%= form.text_field :i1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :j1 %>
+    <%= form.text_field :j1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :k1 %>
+    <%= form.text_field :k1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :l1 %>
+    <%= form.text_field :l1 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Careyoudatum < ApplicationRecord
+end
