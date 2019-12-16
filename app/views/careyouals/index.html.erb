@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Careyouals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aa</th>
+      <th>Bb</th>
+      <th>Ccdd</th>
+      <th>Ee</th>
+      <th>Ff</th>
+      <th>Gg</th>
+      <th>Hh</th>
+      <th>Ii</th>
+      <th>Jj</th>
+      <th>Kk</th>
+      <th>Ll</th>
+      <th>Mm</th>
+      <th>Nn</th>
+      <th>Oo</th>
+      <th>Pp</th>
+      <th>Qq</th>
+      <th>Rr</th>
+      <th>Ss</th>
+      <th>Tt</th>
+      <th>Uu</th>
+      <th>Vv</th>
+      <th>Ww</th>
+      <th>Xx</th>
+      <th>Yy</th>
+      <th>Zz</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @careyouals.each do |careyoual| %>
+      <tr>
+        <td><%= careyoual.aa %></td>
+        <td><%= careyoual.bb %></td>
+        <td><%= careyoual.ccdd %></td>
+        <td><%= careyoual.ee %></td>
+        <td><%= careyoual.ff %></td>
+        <td><%= careyoual.gg %></td>
+        <td><%= careyoual.hh %></td>
+        <td><%= careyoual.ii %></td>
+        <td><%= careyoual.jj %></td>
+        <td><%= careyoual.kk %></td>
+        <td><%= careyoual.ll %></td>
+        <td><%= careyoual.mm %></td>
+        <td><%= careyoual.nn %></td>
+        <td><%= careyoual.oo %></td>
+        <td><%= careyoual.pp %></td>
+        <td><%= careyoual.qq %></td>
+        <td><%= careyoual.rr %></td>
+        <td><%= careyoual.ss %></td>
+        <td><%= careyoual.tt %></td>
+        <td><%= careyoual.uu %></td>
+        <td><%= careyoual.vv %></td>
+        <td><%= careyoual.ww %></td>
+        <td><%= careyoual.xx %></td>
+        <td><%= careyoual.yy %></td>
+        <td><%= careyoual.zz %></td>
+        <td><%= link_to 'Show', careyoual %></td>
+        <td><%= link_to 'Edit', edit_careyoual_path(careyoual) %></td>
+        <td><%= link_to 'Destroy', careyoual, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Careyoual', new_careyoual_path %>

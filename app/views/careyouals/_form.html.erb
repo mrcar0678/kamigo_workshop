@@ -1,0 +1,142 @@
+<%= form_with(model: careyoual, local: true) do |form| %>
+  <% if careyoual.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(careyoual.errors.count, "error") %> prohibited this careyoual from being saved:</h2>
+
+      <ul>
+      <% careyoual.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :aa %>
+    <%= form.text_field :aa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bb %>
+    <%= form.text_field :bb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ccdd %>
+    <%= form.text_field :ccdd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ee %>
+    <%= form.text_field :ee %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ff %>
+    <%= form.text_field :ff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gg %>
+    <%= form.text_field :gg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hh %>
+    <%= form.text_field :hh %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ii %>
+    <%= form.text_field :ii %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jj %>
+    <%= form.text_field :jj %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kk %>
+    <%= form.text_field :kk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ll %>
+    <%= form.text_field :ll %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mm %>
+    <%= form.text_field :mm %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nn %>
+    <%= form.text_field :nn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oo %>
+    <%= form.text_field :oo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pp %>
+    <%= form.text_field :pp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :qq %>
+    <%= form.text_field :qq %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rr %>
+    <%= form.text_field :rr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ss %>
+    <%= form.text_field :ss %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tt %>
+    <%= form.text_field :tt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uu %>
+    <%= form.text_field :uu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vv %>
+    <%= form.text_field :vv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ww %>
+    <%= form.text_field :ww %>
+  </div>
+
+  <div class="field">
+    <%= form.label :xx %>
+    <%= form.text_field :xx %>
+  </div>
+
+  <div class="field">
+    <%= form.label :yy %>
+    <%= form.text_field :yy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zz %>
+    <%= form.text_field :zz %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

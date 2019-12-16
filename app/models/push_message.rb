@@ -1,0 +1,2 @@
+class PushMessage < ApplicationRecord
+end

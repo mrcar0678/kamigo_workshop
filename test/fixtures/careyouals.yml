@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aa: MyString
+  bb: MyString
+  ccdd: MyString
+  ee: MyString
+  ff: MyString
+  gg: MyString
+  hh: MyString
+  ii: MyString
+  jj: MyString
+  kk: MyString
+  ll: MyString
+  mm: MyString
+  nn: MyString
+  oo: MyString
+  pp: MyString
+  qq: MyString
+  rr: MyString
+  ss: MyString
+  tt: MyString
+  uu: MyString
+  vv: MyString
+  ww: MyString
+  xx: MyString
+  yy: MyString
+  zz: MyString
+
+two:
+  aa: MyString
+  bb: MyString
+  ccdd: MyString
+  ee: MyString
+  ff: MyString
+  gg: MyString
+  hh: MyString
+  ii: MyString
+  jj: MyString
+  kk: MyString
+  ll: MyString
+  mm: MyString
+  nn: MyString
+  oo: MyString
+  pp: MyString
+  qq: MyString
+  rr: MyString
+  ss: MyString
+  tt: MyString
+  uu: MyString
+  vv: MyString
+  ww: MyString
+  xx: MyString
+  yy: MyString
+  zz: MyString

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>A:</strong>
+  <%= @push_message.a %>
+</p>
+
+<p>
+  <strong>B:</strong>
+  <%= @push_message.b %>
+</p>
+
+<%= link_to 'Edit', edit_push_message_path(@push_message) %> |
+<%= link_to 'Back', push_messages_path %>

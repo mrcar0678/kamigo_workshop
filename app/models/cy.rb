@@ -1,0 +1,2 @@
+class Cy < ApplicationRecord
+end

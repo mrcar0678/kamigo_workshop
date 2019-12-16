@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>J</th>
+      <th>K</th>
+      <th>L</th>
+      <th>M</th>
+      <th>N</th>
+      <th>O</th>
+      <th>P</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>U</th>
+      <th>V</th>
+      <th>W</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cies.each do |cy| %>
+      <tr>
+        <td><%= cy.a %></td>
+        <td><%= cy.b %></td>
+        <td><%= cy.c %></td>
+        <td><%= cy.d %></td>
+        <td><%= cy.e %></td>
+        <td><%= cy.f %></td>
+        <td><%= cy.g %></td>
+        <td><%= cy.h %></td>
+        <td><%= cy.i %></td>
+        <td><%= cy.j %></td>
+        <td><%= cy.k %></td>
+        <td><%= cy.l %></td>
+        <td><%= cy.m %></td>
+        <td><%= cy.n %></td>
+        <td><%= cy.o %></td>
+        <td><%= cy.p %></td>
+        <td><%= cy.q %></td>
+        <td><%= cy.r %></td>
+        <td><%= cy.s %></td>
+        <td><%= cy.t %></td>
+        <td><%= cy.u %></td>
+        <td><%= cy.v %></td>
+        <td><%= cy.w %></td>
+        <td><%= cy.x %></td>
+        <td><%= cy.y %></td>
+        <td><%= cy.z %></td>
+        <td><%= link_to 'Show', cy %></td>
+        <td><%= link_to 'Edit', edit_cy_path(cy) %></td>
+        <td><%= link_to 'Destroy', cy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cy', new_cy_path %>

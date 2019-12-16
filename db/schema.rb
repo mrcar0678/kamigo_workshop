@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_05_022501) do
+ActiveRecord::Schema.define(version: 2019_11_28_052551) do
 
   create_table "care_yous", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,37 @@ ActiveRecord::Schema.define(version: 2019_08_05_022501) do
     t.string "i1"
     t.string "j1"
     t.string "k1"
+  end
+
+  create_table "careyouallls", force: :cascade do |t|
+    t.string "a"
+    t.string "b"
+    t.string "c"
+    t.string "d"
+    t.string "e"
+    t.string "f"
+    t.string "g"
+    t.string "h"
+    t.string "i"
+    t.string "j"
+    t.string "k"
+    t.string "l"
+    t.string "m"
+    t.string "n"
+    t.string "o"
+    t.string "p"
+    t.string "q"
+    t.string "r"
+    t.string "s"
+    t.string "t"
+    t.string "u"
+    t.string "v"
+    t.string "w"
+    t.string "x"
+    t.string "y"
+    t.string "z"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "careyoualls", force: :cascade do |t|
@@ -47,9 +78,70 @@ ActiveRecord::Schema.define(version: 2019_08_05_022501) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "careyouals", force: :cascade do |t|
+    t.string "aa"
+    t.string "bb"
+    t.string "ccdd"
+    t.string "ee"
+    t.string "ff"
+    t.string "gg"
+    t.string "hh"
+    t.string "ii"
+    t.string "jj"
+    t.string "kk"
+    t.string "ll"
+    t.string "mm"
+    t.string "nn"
+    t.string "oo"
+    t.string "pp"
+    t.string "qq"
+    t.string "rr"
+    t.string "ss"
+    t.string "tt"
+    t.string "uu"
+    t.string "vv"
+    t.string "ww"
+    t.string "xx"
+    t.string "yy"
+    t.string "zz"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "careyoudata", force: :cascade do |t|
     t.string "Q"
     t.string "A"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cies", force: :cascade do |t|
+    t.string "a"
+    t.string "b"
+    t.string "c"
+    t.string "d"
+    t.string "e"
+    t.string "f"
+    t.string "g"
+    t.string "h"
+    t.string "i"
+    t.string "j"
+    t.string "k"
+    t.string "l"
+    t.string "m"
+    t.string "n"
+    t.string "o"
+    t.string "p"
+    t.string "q"
+    t.string "r"
+    t.string "s"
+    t.string "t"
+    t.string "u"
+    t.string "v"
+    t.string "w"
+    t.string "x"
+    t.string "y"
+    t.string "z"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -61,6 +153,13 @@ ActiveRecord::Schema.define(version: 2019_08_05_022501) do
     t.datetime "updated_at", null: false
     t.string "channel_id"
     t.string "temp_1"
+  end
+
+  create_table "push_messages", force: :cascade do |t|
+    t.string "a"
+    t.string "b"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "testabcs", force: :cascade do |t|
