@@ -1,4 +1,5 @@
 class LineController < ActionController::API
+  protect_from_forgery with: :null_session
   before_action :read_body
   before_action :validate_signature
   before_action :read_events
