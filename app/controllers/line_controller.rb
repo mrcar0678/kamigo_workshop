@@ -1,4 +1,5 @@
 class LineController < ActionController::API
+  
   before_action :read_body
   before_action :validate_signature
   before_action :read_events
