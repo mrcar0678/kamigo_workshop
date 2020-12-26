@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :cies
   resources :push_messages
   get 'push/messages'
+  resources :careyouall
   resources :careyoualls
   resources :care_yous
   resources :careyous
