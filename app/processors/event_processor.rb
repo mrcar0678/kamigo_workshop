@@ -1,8 +1,8 @@
 class EventProcessor
   def process(text, event)
 
-channel_id = event["source"]["userId"]
- @b = Careyouall.where(name: channel_id )[0]&.bb
+#channel_id = event["source"]["userId"]
+ #@b = Careyouall.where(name: channel_id )[0]&.bb
  channel_id = event["source"]["userId"]
  @cd = Careyoual.where(aa: channel_id )[0]&.ccdd
  channel_id = event["source"]["userId"]
