@@ -30,7 +30,7 @@ class PushMessagesController < ApplicationController
   # PATCH/PUT /push_messages/1
   # PATCH/PUT /push_messages/1.json
  
-end
+
 channel_id = event["source"]["userId"]
  @b = Careyoual.where(aa: channel_id )[0]&.bb
  channel_id = event["source"]["userId"]
