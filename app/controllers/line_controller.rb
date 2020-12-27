@@ -1,5 +1,5 @@
 class LineController < ActionController::API
-  
+
   before_action :read_body
   before_action :validate_signature
   before_action :read_events
@@ -127,7 +127,7 @@ class LineController < ActionController::API
     qq = Careyoualll.where(a: channel_id )[15]&.q
     rr = Careyoualll.where(a: channel_id )[16]&.r
     
-   Careyoual.create(aa: channel_id, bb:bb, ccdd:cc, ee:dd, ff:ee, gg:ff, hh:gg, ii:hh, jj:ii, kk:jj, ll:kk, mm:ll, nn:mm, oo:nn, pp:oo, qq:pp, rr:qq, ss:rr)
+   Careyouall.create(aa: channel_id, bb:bb, ccdd:cc, ee:dd, ff:ee, gg:ff, hh:gg, ii:hh, jj:ii, kk:jj, ll:kk, mm:ll, nn:mm, oo:nn, pp:oo, qq:pp, rr:qq, ss:rr)
    #Careyoualll.where(a: channel_id ).delete_all
    #Careyoual.where(aa: channel_id ).delete_all 
     elsif text == "確認"
