@@ -1,40 +1,40 @@
 class EventProcessor
   def process(text, event)
 
-#channel_id = event["source"]["userId"]
- #@b = Careyouall.where(name: channel_id )[0]&.bb
  channel_id = event["source"]["userId"]
- @cd = Careyoual.where(aa: channel_id )[0]&.ccdd
+ @b = Ama2.where(a: channel_id )[0]&.b
  channel_id = event["source"]["userId"]
- @e = Careyoual.where(aa: channel_id )[0]&.ee
+ @c = Ama2.where(a: channel_id )[0]&.c
  channel_id = event["source"]["userId"]
- @f = Careyoual.where(aa: channel_id )[0]&.ff
+ @d = Ama2.where(a: channel_id )[0]&.d
  channel_id = event["source"]["userId"]
- @g = Careyoual.where(aa: channel_id )[0]&.gg
+ @e = Ama2.where(a: channel_id )[0]&.e
  channel_id = event["source"]["userId"]
- @h = Careyoual.where(aa: channel_id )[0]&.hh
+ @f = Ama2.where(a: channel_id )[0]&.f
  channel_id = event["source"]["userId"]
- @i = Careyoual.where(aa: channel_id )[0]&.ii
+ @g = Ama2.where(a: channel_id )[0]&.g
  channel_id = event["source"]["userId"]
- @j = Careyoual.where(aa: channel_id )[0]&.jj
+ @h = Ama2.where(a: channel_id )[0]&.h
  channel_id = event["source"]["userId"]
- @k = Careyoual.where(aa: channel_id )[0]&.kk
+ @i = Ama2.where(a: channel_id )[0]&.i
  channel_id = event["source"]["userId"]
- @l = Careyoual.where(aa: channel_id )[0]&.ll
+ @j = Ama2.where(a: channel_id )[0]&.j
  channel_id = event["source"]["userId"]
- @m = Careyoual.where(aa: channel_id )[0]&.mm
+ @k = Ama2.where(a: channel_id )[0]&.k
  channel_id = event["source"]["userId"]
- @n = Careyoual.where(aa: channel_id )[0]&.nn
+ @l = Ama2.where(a: channel_id )[0]&.l
  channel_id = event["source"]["userId"]
- @o = Careyoual.where(aa: channel_id )[0]&.oo
+ @m = Ama2.where(a: channel_id )[0]&.m
  channel_id = event["source"]["userId"]
- @p = Careyoual.where(aa: channel_id )[0]&.pp
+ @n = Ama2.where(a: channel_id )[0]&.n
  channel_id = event["source"]["userId"]
- @q = Careyoual.where(aa: channel_id )[0]&.qq
+ @o = Ama2.where(a: channel_id )[0]&.o
  channel_id = event["source"]["userId"]
- @r = Careyoual.where(aa: channel_id )[0]&.rr
+ @p = Ama2.where(a: channel_id )[0]&.p
  channel_id = event["source"]["userId"]
- @s = Careyoual.where(aa: channel_id )[0]&.ss
+ @q = Ama2.where(a: channel_id )[0]&.q
+ channel_id = event["source"]["userId"]
+ @r = Ama2.where(a: channel_id )[0]&.r
 
 #關鍵字答覆
 return ky1 if ["遺產" , "遺產稅"].include? text
@@ -640,7 +640,7 @@ def abc
             "contents": [
               {
                 "type": "text",
-                "text": "主事者：#{@r}",
+                "text": "主事者：#{@q}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -649,7 +649,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "電話：#{@s}",
+                "text": "電話：#{@r}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -669,7 +669,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "居住地區：#{@cd}",
+                "text": "居住地區：#{@c}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -678,7 +678,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "目前位置：#{@e}",
+                "text": "目前位置：#{@d}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -687,7 +687,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "身體保存方式：#{@f}",
+                "text": "身體保存方式：#{@e}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -697,7 +697,7 @@ def abc
               
               {
                 "type": "text",
-                "text": "骨罐樣式：#{@g}",
+                "text": "骨罐樣式：#{@f}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -706,7 +706,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "壽衣樣式：#{@h}",
+                "text": "壽衣樣式：#{@g}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -715,7 +715,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "孝服樣式：#{@i}",
+                "text": "孝服樣式：#{@h}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -724,7 +724,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "禮車型號：#{@j}",
+                "text": "禮車型號：#{@i}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -733,7 +733,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "做七法事：#{@k}",
+                "text": "做七法事：#{@j}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -742,7 +742,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "拜藥懺：#{@l}",
+                "text": "拜藥懺：#{@k}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -751,7 +751,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "解冤親：#{@m}",
+                "text": "解冤親：#{@l}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -760,7 +760,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "會場規格：#{@n}",
+                "text": "會場規格：#{@m}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -769,7 +769,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "花圈花籃：#{@o}",
+                "text": "花圈花籃：#{@n}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -778,7 +778,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "祭品拜飯：#{@p}",
+                "text": "祭品拜飯：#{@o}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 
@@ -787,7 +787,7 @@ def abc
               },
               {
                 "type": "text",
-                "text": "交通車接送：#{@q}",
+                "text": "交通車接送：#{@p}",
                 "wrap": true,
                 #{}"color": "#aaaaaa",
 

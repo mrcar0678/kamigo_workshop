@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ama1s
   resources :careyouals
   resources :careyouallls
   resources :cies
