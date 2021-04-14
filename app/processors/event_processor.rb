@@ -60,11 +60,11 @@ return test_4  if  ["冰存(淨身)" , "冰存(不淨身)" , "不冰存(淨身)"
 
 return test_5  if  ["有需求"].include? text
 
-return test_6  if  ["123骨罐" , "456骨罐" , "789骨罐"].include? text
+return test_6  if  ["青玉鈦合金內膽" , "不銹鋼內膽" , "鈦合金心經內膽" , "黑花崗直筒骨灰罐" , "琉璃白"].include? text
 
-return test_7  if  ["123壽衣" , "456壽衣" , "789壽衣"].include? text
+return test_7  if  ["男款西裝" , "女款裙裝" ].include? text
 
-return test_8  if  ["123孝服" , "456孝服" , "789孝服" ].include? text
+return test_8  if  ["黑袍" , "披麻戴孝"  ].include? text
 
 return test_9  if  ["123禮車" , "456禮車" , "789禮車"].include? text
 
@@ -1403,7 +1403,7 @@ def test_5 #骨罐樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvv6xVfPTvGERSjxWhg9Qu89RXh_2p2e3ECDj5FYLza0kyaXViyg&s"
+        "url": "https://upload.cc/i1/2021/04/14/tT0vcP.jpg"
       },
       "body": {
         "type": "box",
@@ -1412,7 +1412,7 @@ def test_5 #骨罐樣式
         "contents": [
           {
             "type": "text",
-            "text": "123骨罐",
+            "text": "青玉鈦合金內膽",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1425,7 +1425,7 @@ def test_5 #骨罐樣式
             "contents": [
               {
                 "type": "text",
-                "text": "123骨罐描述",
+                "text": "特色：防震、適合放塔位(公塔)契約外加",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1447,8 +1447,8 @@ def test_5 #骨罐樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "123骨罐",
-              "text": "123骨罐"
+              "label": "青玉鈦合金內膽",
+              "text": "青玉鈦合金內膽"
             }
           },
           
@@ -1462,7 +1462,7 @@ def test_5 #骨罐樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQhDfRM-KInVc-GG5uvCSZ4VNvUsM9XAm5_KC9WmiySUGPGqS&s"
+        "url": "https://upload.cc/i1/2021/04/14/Y6BLDd.jpg"
       },
       "body": {
         "type": "box",
@@ -1471,7 +1471,7 @@ def test_5 #骨罐樣式
         "contents": [
           {
             "type": "text",
-            "text": "456骨罐",
+            "text": "不銹鋼內膽",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1484,7 +1484,7 @@ def test_5 #骨罐樣式
             "contents": [
               {
                 "type": "text",
-                "text": "456骨罐描述",
+                "text": "特色：防震,預約契約（禮儀師折扣",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1506,8 +1506,8 @@ def test_5 #骨罐樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "456骨罐",
-              "text": "456骨罐"
+              "label": "不銹鋼內膽",
+              "text": "不銹鋼內膽"
             }
           }
         ]
@@ -1520,7 +1520,7 @@ def test_5 #骨罐樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://pic.pimg.tw/tlec/3a12a53b632d599a27b3085b2a288c78.jpg"
+        "url": "https://upload.cc/i1/2021/04/14/MXrRxq.jpg"
       },
       "body": {
         "type": "box",
@@ -1529,7 +1529,7 @@ def test_5 #骨罐樣式
         "contents": [
           {
             "type": "text",
-            "text": "789骨罐",
+            "text": "鈦合金心經內膽",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1542,7 +1542,7 @@ def test_5 #骨罐樣式
             "contents": [
               {
                 "type": "text",
-                "text": "789骨罐描述",
+                "text": "特色：經文高雅防震,預約契約（禮儀師折價)",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1564,15 +1564,129 @@ def test_5 #骨罐樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "789骨罐",
-              "text": "789骨罐"
+              "label": "鈦合金心經內膽",
+              "text": "鈦合金心經內膽"
             }
           }
         ]
       }
-    }
-
-    
+    },
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2021/04/14/lAf7CU.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "黑花崗直筒骨灰罐",
+            #{}"align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "特色：品質穩定，90%客人選購,契約內直送,單點最優惠",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "黑花崗直筒骨灰罐",
+              "text": "黑花崗直筒骨灰罐"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2021/04/14/rZWykJ.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "琉璃白",
+            #{}"align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "特色：潔淨透亮光澤明顯",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "琉璃白",
+              "text": "琉璃白"
+            }
+          }
+        ]
+      }
+    },
   ]
 }
     }
@@ -1613,7 +1727,7 @@ def test_6 #壽衣樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvv6xVfPTvGERSjxWhg9Qu89RXh_2p2e3ECDj5FYLza0kyaXViyg&s"
+        "url": "https://upload.cc/i1/2021/04/14/xvJIf0.jpg"
       },
       "body": {
         "type": "box",
@@ -1622,7 +1736,7 @@ def test_6 #壽衣樣式
         "contents": [
           {
             "type": "text",
-            "text": "123壽衣",
+            "text": "男款西裝",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1635,7 +1749,7 @@ def test_6 #壽衣樣式
             "contents": [
               {
                 "type": "text",
-                "text": "123壽衣描述",
+                "text": "男款西裝",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1657,8 +1771,8 @@ def test_6 #壽衣樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "123壽衣",
-              "text": "123壽衣"
+              "label": "男款西裝",
+              "text": "男款西裝"
             }
           },
           
@@ -1672,7 +1786,7 @@ def test_6 #壽衣樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQhDfRM-KInVc-GG5uvCSZ4VNvUsM9XAm5_KC9WmiySUGPGqS&s"
+        "url": "https://upload.cc/i1/2021/04/14/HSnaq3.jpg"
       },
       "body": {
         "type": "box",
@@ -1681,7 +1795,7 @@ def test_6 #壽衣樣式
         "contents": [
           {
             "type": "text",
-            "text": "456壽衣",
+            "text": "女款裙裝",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1694,7 +1808,7 @@ def test_6 #壽衣樣式
             "contents": [
               {
                 "type": "text",
-                "text": "456獸醫描述",
+                "text": "女款裙裝",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1716,71 +1830,14 @@ def test_6 #壽衣樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "456壽衣",
-              "text": "456壽衣"
+              "label": "女款裙裝",
+              "text": "女款裙裝"
             }
           }
         ]
       }
     },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "15:13",
-        "aspectMode": "cover",
-        "url": "https://pic.pimg.tw/tlec/3a12a53b632d599a27b3085b2a288c78.jpg"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "789壽衣",
-            #{}"align": "center",
-            "wrap": true,
-            "weight": "bold",
-            "size": "xl"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "flex": 1,
-            "contents": [
-              {
-                "type": "text",
-                "text": "789壽衣描述",
-                "align": "center",
-                "wrap": true,
-                #{}"weight": "bold",
-                "size": "xl",
-                "flex": 0
-              },
-              
-            ]
-          },
-          
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "lg",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "789壽衣",
-              "text": "789壽衣"
-            }
-          }
-        ]
-      }
-    }
+    
 
     
   ]
@@ -1823,7 +1880,7 @@ def test_7 #孝服樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvv6xVfPTvGERSjxWhg9Qu89RXh_2p2e3ECDj5FYLza0kyaXViyg&s"
+        "url": "https://upload.cc/i1/2021/04/14/uxV0v2.jpg"
       },
       "body": {
         "type": "box",
@@ -1832,7 +1889,7 @@ def test_7 #孝服樣式
         "contents": [
           {
             "type": "text",
-            "text": "123孝服",
+            "text": "黑袍",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1845,7 +1902,7 @@ def test_7 #孝服樣式
             "contents": [
               {
                 "type": "text",
-                "text": "123孝服描述",
+                "text": "黑袍",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1867,8 +1924,8 @@ def test_7 #孝服樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "123孝服",
-              "text": "123孝服"
+              "label": "黑袍",
+              "text": "黑袍"
             }
           },
           
@@ -1882,7 +1939,7 @@ def test_7 #孝服樣式
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQhDfRM-KInVc-GG5uvCSZ4VNvUsM9XAm5_KC9WmiySUGPGqS&s"
+        "url": "https://upload.cc/i1/2021/04/14/B7Uluj.jpeg"
       },
       "body": {
         "type": "box",
@@ -1891,7 +1948,7 @@ def test_7 #孝服樣式
         "contents": [
           {
             "type": "text",
-            "text": "456孝服",
+            "text": "披麻戴孝",
             #{}"align": "center",
             "wrap": true,
             "weight": "bold",
@@ -1904,7 +1961,7 @@ def test_7 #孝服樣式
             "contents": [
               {
                 "type": "text",
-                "text": "456孝服描述",
+                "text": "披麻戴孝",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1926,71 +1983,14 @@ def test_7 #孝服樣式
             "type": "button",
             "action": {
               "type": "message",
-              "label": "456孝服",
-              "text": "456孝服"
+              "label": "披麻戴孝",
+              "text": "披麻戴孝"
             }
           }
         ]
       }
     },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "15:13",
-        "aspectMode": "cover",
-        "url": "https://pic.pimg.tw/tlec/3a12a53b632d599a27b3085b2a288c78.jpg"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "789孝服",
-            #{}"align": "center",
-            "wrap": true,
-            "weight": "bold",
-            "size": "xl"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "flex": 1,
-            "contents": [
-              {
-                "type": "text",
-                "text": "789孝服描述",
-                "align": "center",
-                "wrap": true,
-                #{}"weight": "bold",
-                "size": "xl",
-                "flex": 0
-              },
-              
-            ]
-          },
-          
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "lg",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "789孝服",
-              "text": "789孝服"
-            }
-          }
-        ]
-      }
-    }
+    
 
     
   ]
@@ -2033,7 +2033,7 @@ def test_8 #禮車
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvv6xVfPTvGERSjxWhg9Qu89RXh_2p2e3ECDj5FYLza0kyaXViyg&s"
+        "url": "https://upload.cc/i1/2021/04/14/RhSJTK.jpeg"
       },
       "body": {
         "type": "box",
@@ -2092,7 +2092,7 @@ def test_8 #禮車
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQhDfRM-KInVc-GG5uvCSZ4VNvUsM9XAm5_KC9WmiySUGPGqS&s"
+        "url": "https://upload.cc/i1/2021/04/14/S1FbUV.jpeg"
       },
       "body": {
         "type": "box",
@@ -2150,7 +2150,7 @@ def test_8 #禮車
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://pic.pimg.tw/tlec/3a12a53b632d599a27b3085b2a288c78.jpg"
+        "url": "https://upload.cc/i1/2021/04/14/2lqszc.jpeg"
       },
       "body": {
         "type": "box",
@@ -2524,7 +2524,7 @@ def test_12 #會場大小
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvv6xVfPTvGERSjxWhg9Qu89RXh_2p2e3ECDj5FYLza0kyaXViyg&s"
+        "url": "https://upload.cc/i1/2021/04/14/6Rwpeg.jpg"
       },
       "body": {
         "type": "box",
