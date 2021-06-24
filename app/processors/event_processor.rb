@@ -36,7 +36,7 @@ class EventProcessor
  channel_id = event["source"]["userId"]
  @r = Ama2.where(a: channel_id )[0]&.r
 
-#關鍵字答覆
+#關鍵字答覆#####################################################
 return ky1 if ["遺產" , "遺產稅"].include? text
 
 return ky2 if ["奠禮" , "奠禮後" , "注意事項"  , "禁忌","注意"].include? text
@@ -44,43 +44,65 @@ return ky2 if ["奠禮" , "奠禮後" , "注意事項"  , "禁忌","注意"].inc
 return ky3 if ["入殮" , "小殮" , "大殮", "遺體保存"].include? text
 
 return ky4 if ["打桶" , "保存" , "遺體保存", "遺體存放"].include? text
-#禮儀資訊
+
+#禮儀師團隊####################################################
+return member_1 if  text == "禮儀團隊"
+
+
+#禮儀資訊#######################################################
 
 return test_0 if text == "禮儀資訊" 
 
 return test_0 if text == "返回重新選擇"
+return test_0 if text == "返回宗教選單"
 
 return test_1 if ["佛教" , "道教" , "天主教" , "基督教" , "回教" , "無信仰"].include? text
+return test_1 if text == "返回位置選單"
 
 return test_2  if  ["北部" , "中部" , "南部" , "東部"].include? text 
+return test_2 if text == "返回場所選單"
 
 return test_3  if  ["在家" , "醫院" , "會館" , "殯館"].include? text
+return test_3 if text == "返回保存選單"
 
 return test_4  if  ["冰存(淨身)" , "冰存(不淨身)" , "不冰存(淨身)" , "不冰存(不淨身)"].include? text
+return test_4 if text == "返回需求選單"
 
 return test_5  if  ["有需求"].include? text
+return test_5 if text == "返回骨罐選單"
 
 return test_6  if  ["青玉鈦合金內膽" , "不銹鋼內膽" , "鈦合金心經內膽" , "黑花崗直筒骨灰罐" , "琉璃白"].include? text
+return test_6 if text == "返回壽衣選單"
 
 return test_7  if  ["男款西裝" , "女款裙裝" ].include? text
+return test_7 if text == "返回孝服選單"
 
 return test_8  if  ["黑袍" , "披麻戴孝"  ].include? text
+return test_8 if text == "返回禮車選單"
 
 return test_9  if  ["123禮車" , "456禮車" , "789禮車"].include? text
+return test_9 if text == "返回做七選單"
 
 return test_10  if  ["有需求做七" , "無需求做七" ].include? text
+return test_10 if text == "返回拜藥籤選單"
 
 return test_11  if  ["有需求拜藥懺" , "無需求拜藥懺" ].include? text
+return test_11 if text == "返回解冤親選單"
 
 return test_12  if  ["有需求解冤親" , "無需求解冤親" ].include? text
+return test_12 if text == "返回告別式選單"
 
 return test_13  if  ["靈前告別式" , "會館告別式" , "殯儀館告別式" ].include? text
+return test_13 if text == "返回花圈花籃選單"
 
 return test_14  if  ["有需求花圈花籃" , "無需求花圈花籃" ].include? text
+return test_14 if text == "返回祭品拜飯選單"
 
 return test_15  if  ["有需求祭品拜飯" , "無需求祭品拜飯" ].include? text
 
+
 return test_16  if  ["有需求交通車" , "無需求交通車" ].include? text
+
 
 return test_17  if  text[-11] == '/'
 
@@ -90,7 +112,7 @@ end
 
 
 
-#關鍵字回覆選單
+#關鍵字回覆選單##############################################
 def ky1 #遺產處理
 {   
       "type": "flex",
@@ -598,7 +620,7 @@ def ky4 #打桶
 
 
 
-#禮儀資訊選單
+#禮儀資訊選單###################################################################
 def abc
  
  {   
@@ -957,6 +979,16 @@ def test_0 #宗教習慣
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "無信仰",
+                "text": "無信仰"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -1070,6 +1102,16 @@ def test_0 #宗教習慣
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回宗教選單"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -1176,6 +1218,16 @@ def test_0 #宗教習慣
                 "type": "message",
                 "label": "殯館",
                 "text": "殯館"
+              }
+            },
+            {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回位置選單"
               }
             },
             {
@@ -1289,6 +1341,16 @@ def test_0 #宗教習慣
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回場所選單"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -1356,6 +1418,16 @@ def test_0 #宗教習慣
                 "type": "message",
                 "label": "無需求",
                 "text": "無需求"
+              }
+            },
+            {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回保存選單"
               }
             },
             {
@@ -1451,7 +1523,16 @@ def test_5 #骨罐樣式
               "text": "青玉鈦合金內膽"
             }
           },
-          
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回需求選單"
+              }
+            },
         ]
       }
     },
@@ -1509,7 +1590,17 @@ def test_5 #骨罐樣式
               "label": "不銹鋼內膽",
               "text": "不銹鋼內膽"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回需求選單"
+              }
+            },
         ]
       }
     },
@@ -1567,7 +1658,17 @@ def test_5 #骨罐樣式
               "label": "鈦合金心經內膽",
               "text": "鈦合金心經內膽"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回需求選單"
+              }
+            },
         ]
       }
     },
@@ -1625,7 +1726,17 @@ def test_5 #骨罐樣式
               "label": "黑花崗直筒骨灰罐",
               "text": "黑花崗直筒骨灰罐"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回需求選單"
+              }
+            },
         ]
       }
     },
@@ -1683,7 +1794,17 @@ def test_5 #骨罐樣式
               "label": "琉璃白",
               "text": "琉璃白"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回需求選單"
+              }
+            },
         ]
       }
     },
@@ -1775,7 +1896,16 @@ def test_6 #壽衣樣式
               "text": "男款西裝"
             }
           },
-          
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回骨罐選單"
+              }
+            },
         ]
       }
     },
@@ -1833,7 +1963,17 @@ def test_6 #壽衣樣式
               "label": "女款裙裝",
               "text": "女款裙裝"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回骨罐選單"
+              }
+            }, 
         ]
       }
     },
@@ -1928,7 +2068,16 @@ def test_7 #孝服樣式
               "text": "黑袍"
             }
           },
-          
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回壽衣選單"
+              }
+            },
         ]
       }
     },
@@ -1986,7 +2135,17 @@ def test_7 #孝服樣式
               "label": "披麻戴孝",
               "text": "披麻戴孝"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回壽衣選單"
+              }
+            },
         ]
       }
     },
@@ -2081,7 +2240,16 @@ def test_8 #禮車
               "text": "123禮車"
             }
           },
-          
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回孝服選單"
+              }
+            },
         ]
       }
     },
@@ -2139,7 +2307,17 @@ def test_8 #禮車
               "label": "456禮車",
               "text": "456禮車"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回孝服選單"
+              }
+            },
         ]
       }
     },
@@ -2197,7 +2375,17 @@ def test_8 #禮車
               "label": "789禮車",
               "text": "789禮車"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回孝服選單"
+              }
+            },
         ]
       }
     }
@@ -2293,6 +2481,16 @@ def test_8 #禮車
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回禮車選單"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -2383,6 +2581,16 @@ def test_8 #禮車
                 "type": "message",
                 "label": "無需求",
                 "text": "無需求拜藥懺"
+              }
+            },
+            {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回做七選單"
               }
             },
             {
@@ -2480,6 +2688,16 @@ def test_8 #禮車
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回拜藥籤選單"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -2572,7 +2790,16 @@ def test_12 #會場大小
               "text": "靈前告別式"
             }
           },
-          
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回解冤親選單"
+              }
+            },
         ]
       }
     },
@@ -2630,7 +2857,17 @@ def test_12 #會場大小
               "label": "會館告別式",
               "text": "會館告別式"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回解冤親選單"
+              }
+            },
         ]
       }
     },
@@ -2688,7 +2925,17 @@ def test_12 #會場大小
               "label": "殯儀館告別式",
               "text": "殯儀館告別式"
             }
-          }
+          },
+          {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回解冤親選單"
+              }
+            },
         ]
       }
     }
@@ -2780,6 +3027,16 @@ def test_12 #會場大小
                 "type": "message",
                 "label": "無需求",
                 "text": "無需求花圈花籃"
+              }
+            },
+            {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回告別式選單"
               }
             },
             {
@@ -2877,6 +3134,16 @@ def test_14 #祭品拜飯
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回花圈花籃選單"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -2968,6 +3235,16 @@ def test_14 #祭品拜飯
               }
             },
             {
+              "type": "button",
+              #{}"style": "link",
+              "height": "sm",
+              "action": {
+                "type": "message",
+                "label": "返回上一層",
+                "text": "返回祭品拜飯選單"
+              }
+            },
+            {
               "type": "spacer",
               "size": "sm"
             }
@@ -3029,7 +3306,8 @@ def test_16
             ]
           }
         ]
-      }
+      },
+      
 
            
           ]
@@ -3123,7 +3401,258 @@ def test_17
       }
     }
 end  
+#禮儀師團隊###############################################################
+def member_1 
+      {  
+      "type": "flex",
+      "altText": "this is a flex message",
+      "contents": {
+"type": "carousel",
+  "contents": [
+    
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2021/06/25/qBbuYM.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "禮儀師：金城武",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "服務地區：台北",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "選擇禮儀師",
+              "text": "選擇金城武禮儀師"
+            }
+          },
+          
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2021/06/25/8pkHBh.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "禮儀師：郭富城",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "服務地區：台中",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "選擇禮儀師",
+              "text": "選擇郭富城禮儀師"
+            }
+          },
+          
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2021/06/25/QHmiRo.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "禮儀師：劉德華",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "服務地區：高雄",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "選擇禮儀師",
+              "text": "選擇劉德華禮儀師"
+            }
+          },
+          
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2021/06/25/5MvD1G.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "禮儀師：王陽明",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "服務地區：台東",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "選擇禮儀師",
+              "text": "選擇王陽明禮儀師"
+            }
+          },
+          
+        ]
+      }
+    },
+    
 
+    
+  ]
+}
+    }
+    end
 end
 
   

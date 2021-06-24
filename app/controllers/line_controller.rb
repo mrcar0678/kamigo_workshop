@@ -28,7 +28,7 @@ class LineController < ActionController::API
     message = EventProcessor.new.process(text, event)
     
     
-    if ["佛教" , "道教" , "天主教" , "基督教" , "回教"].include? text 
+    if ["佛教" , "道教" , "天主教" , "基督教" , "回教", "無信仰"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, b: text)
     bb = Ama1.where(a: channel_id )[0]&.b
@@ -37,71 +37,114 @@ class LineController < ActionController::API
     channel_id = event["source"]["userId"]  
     Ama1.create(a: channel_id, c: text)
     cc = Ama1.where(a: channel_id )[1]&.c 
+    elsif ["返回宗教選單"].include? text
+    channel_id = event["source"]["userId"]
+    Ama1.where(a: channel_id )[0].delete
+     
 
     elsif ["在家" , "醫院" , "會館" , "殯館"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, d: text)
     dd = Ama1.where(a: channel_id )[2]&.d
+    elsif ["返回位置選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[1].delete
 
     elsif ["冰存(淨身)" , "冰存(不淨身)" , "不冰存(淨身)" , "不冰存(不淨身)"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, e: text)
     ee = Ama1.where(a: channel_id )[3]&.e
+    elsif ["返回場所選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[2].delete
 
-    elsif ["123骨罐" , "456骨罐" , "789骨罐"].include? text 
+    elsif ["青玉鈦合金內膽" , "不銹鋼內膽" , "鈦合金心經內膽" , "黑花崗直筒骨灰罐" , "琉璃白"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, f: text)
     ff = Ama1.where(a: channel_id )[4]&.f
+    elsif ["返回保存選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[3].delete
 
-    elsif ["123壽衣" , "456壽衣" , "789壽衣"].include? text 
+    elsif ["男款西裝" , "女款裙裝" ].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, g: text)
     gg = Ama1.where(a: channel_id )[5]&.g
+    elsif ["返回骨罐選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[4].delete
 
-    elsif ["123孝服" , "456孝服" , "789孝服"].include? text 
+    elsif ["黑袍" , "披麻戴孝" ].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, h: text)
     hh = Ama1.where(a: channel_id )[6]&.h
+    elsif ["返回壽衣選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[5].delete
 
     elsif ["123禮車" , "456禮車" , "789禮車" ].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, i: text)
     ii = Ama1.where(a: channel_id )[7]&.i
+    elsif ["返回孝服選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[6].delete
 
     elsif ["有需求做七" , "無需求做七" ].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, j: text)
     jj = Ama1.where(a: channel_id )[8]&.j
+    elsif ["返回禮車選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[7].delete
 
     elsif ["有需求拜藥懺" , "無需求拜藥懺" ].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, k: text)
     kk = Ama1.where(a: channel_id )[9]&.k
+    elsif ["返回做七選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[8].delete
 
     elsif ["有需求解冤親" , "無需求解冤親"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, l: text)
     ll = Ama1.where(a: channel_id )[10]&.l
+    elsif ["返回拜藥懺選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[9].delete
 
     elsif ["靈前告別式" , "會館告別式" , "殯儀館告別式"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, m: text)
     mm = Ama1.where(a: channel_id )[11]&.m
+    elsif ["返回解冤親選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[10].delete
 
     elsif ["有需求花圈花籃" , "無需求花圈花籃"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, n: text)
-    nn = Careyoualll.where(a: channel_id )[12]&.n
+    nn = Ama1.where(a: channel_id )[12]&.n
+    elsif ["返回告別式選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[11].delete
 
     elsif ["有需求祭品拜飯" , "無需求祭品拜飯"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, o: text)
     oo = Ama1.where(a: channel_id )[13]&.o
+    elsif ["返回花圈花籃選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[12].delete
 
     elsif ["有需求交通車" , "無需求交通車"].include? text 
     channel_id = event["source"]["userId"]
     Ama1.create(a: channel_id, p: text)
     pp = Ama1.where(a: channel_id )[14]&.p
+    elsif ["返回祭品拜飯選單"].include? text
+    channel_id = event["source"]["userId"]  
+    Ama1.where(a: channel_id )[13].delete
 
     elsif text[-11] == '/'
     channel_id = event["source"]["userId"]
@@ -162,6 +205,8 @@ class LineController < ActionController::API
     body = Net::HTTP.get(uri)
   
   end
+  
+
 
 
 
@@ -190,6 +235,7 @@ return if message == "2"
       config.channel_secret = ENV['LINE_CHANNEL_SECRET']
       config.channel_token = ENV['LINE_CHANNEL_TOKEN']
 end
+
   end
 
   def read_body
