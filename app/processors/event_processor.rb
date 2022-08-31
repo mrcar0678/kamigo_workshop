@@ -51,12 +51,12 @@ return member_1 if  text == "禮儀團隊"
 
 #禮儀資訊#######################################################
 
-return test_0 if text == "禮儀資訊" 
+return test_0 if text == "喪禮服務" 
 
 return test_0 if text == "返回重新選擇"
 return test_0 if text == "返回宗教選單"
 
-return test_1 if ["佛教" , "道教" , "天主教" , "基督教" , "回教" , "無信仰"].include? text
+return test_1 if text == "福緣禮儀服務內容"
 return test_1 if text == "返回位置選單"
 
 return test_2  if  ["北部" , "中部" , "南部" , "東部"].include? text 
@@ -866,8 +866,820 @@ def abc
 
   end  
 
+def test_0 #契約選單
+      {  
+      "type": "flex",
+      "altText": "this is a flex message",
+      "contents": {
+"type": "carousel",
+  "contents": [
+    
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://upload.cc/i1/2022/08/31/945jgJ.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "福緣禮儀服務",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n以簡單尊嚴的方式\n為家人規劃一場人生的畢業典禮",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "md",
+                "flex": 0
+              },
+              
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n契約價格：99000",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "服務內容",
+              "text": "福緣禮儀服務內容"
+            }
+          },
+          
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://bpic.588ku.com/art_origin_min_pic/21/12/11/298e19ebab4ada44a505167608fcdd14.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "圓滿禮儀服務",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n以莊嚴圓滿方式\n為家人規劃一場溫馨的畢業典禮",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "md",
+                "flex": 0
+              },
+              
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n契約價格：169000",
+                "align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "服務內容",
+              "text": "圓滿禮儀服務內容"
+            }
+          },
+          
+        ]
+      }
+    },
+    
 
-def test_0 #宗教習慣
+    
+  ]
+}
+    }
+    end
+
+    def test_1 #幅緣禮儀服務內容
+      {  
+      "type": "flex",
+      "altText": "this is a flex message",
+      "contents": {
+"type": "carousel",
+  "contents": [
+    
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://blog.betterhelpgroup.com/wp-content/uploads/2020/11/%E6%84%9B%E8%87%AA%E5%B7%B1-500x400.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "臨終諮詢",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n臨終禮儀與習俗諮詢\n\n服務專線：0800-666016",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://www.scbao.com/uploads/allimg/140408/234642-14040Q5245972.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "遺體接送",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n接體服務\n遺體安置\n協助處理初終禮儀事項",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "選擇遺體冰存方式：",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "冰存（淨身）",
+              "text": "冰存（淨身）"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "冰存（不淨身）",
+              "text": "冰存（不淨身）"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "不冰存（淨身）",
+              "text": "不冰存（淨身）"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "不冰存（不淨身）",
+              "text": "不冰存（不淨身）"
+            }
+          },
+        ]
+      }
+      
+    },
+   {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://img95.699pic.com/xsj/01/l4/vh.jpg!/fh/300"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "設立靈位",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n設立靈位\n靈堂佈置\n安靈法事",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://img95.699pic.com/xsj/1o/2i/gi.jpg!/fh/300"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "治喪協調",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n治喪流程及會場規劃·協調\n\n喪禮儀節日期·時辰擇定\n\n喪葬日課表\n\n殯葬禮儀服務內容說明\n\n相關權益說明\n\n訃聞協助撰寫\n\n提供生平事略範例參考\n\n提供奠文範例參考\n\n擬定治喪手冊\n\n火化許可證申請\n\n辦理禮聽預定",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "md",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://www.ebapp.com.tw/Mobile/newsimage/1515?.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "法事",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n頭七禮儀\n滿七禮儀",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://www.illust-factory.com/wp-content/uploads/2020/01/G/sample_g22_G_img03.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "遺體入殮",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n遺體退冰\n遺體更衣\n化妝\n辭生\n放手尾\n遺體入殮\n選擇壽衣款式：",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "男款西裝",
+              "text": "男款西裝"
+            }
+          },
+        
+         
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "女款裙裝",
+              "text": "女款裙裝）"
+            }
+          },
+        ]
+      }
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://t.pimg.jp/045/465/362/1/45465362.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "家公奠禮",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n移靈\n誦經\n家奠禮\n公奠禮\n親友捻香\n選擇孝服款式：",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "lg",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "黑袍",
+              "text": "黑袍"
+            }
+          },
+        
+         
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "披麻戴孝",
+              "text": "披麻戴孝"
+            }
+          },
+        ]
+      }
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://3.bp.blogspot.com/-fTIn98RJb0A/UQC7Yg6MOgI/AAAAAAAALFg/PrrJUQ9VQPQ/s1600/osoushiki_syukkan.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "出殯發引",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n瞻仰遺容\n移柩\n封釘禮\n旋棺\n發引\n辭客",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://img95.699pic.com/photo/40155/6203.jpg_wh300.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "遺體火化",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n誦經\n進爐儀式\n除服\n撿骨\n封罐",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://pic.pimg.tw/hellowandy/1385301461-3232769131.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "返主安靈",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n返主安靈\n誦經\n洗淨\n除紅",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://img.88tph.com/p1/production/20180107/12438255.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "晉塔",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n晉塔安正\n家屬祭拜\n誦經",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+{
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "15:13",
+        "aspectMode": "cover",
+        "url": "https://png.pngtree.com/png-vector/20220513/ourmid/pngtree-hand-background-business-care-community-png-image_4586462.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "後續關懷",
+            "align": "center",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "flex": 1,
+            "contents": [
+              {
+                "type": "text",
+                "text": "\n家屬滿意度調查及建議\n客戶問題處理及答覆\n百日\n對年（三年）\n合爐之提醒及禮儀諮詢服務",
+                #{}"align": "center",
+                "wrap": true,
+                #{}"weight": "bold",
+                "size": "xl",
+                "flex": 0
+              },
+              
+            ]
+          },
+          
+        ]
+      },
+      
+    }, 
+
+  ]
+}
+    }
+    end
+
+def test_100 #宗教習慣
       {   
       "type": "flex",
       "altText": "this is a flex message",
@@ -875,7 +1687,7 @@ def test_0 #宗教習慣
         "type": "bubble",
         "hero": {
           "type": "image",
-          "url": "https://www.crazyvector.com/wp-content/uploads/2018/11/Praying-Man-at-Aidil-Fitri-Vector.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/XXXXCAT.jpg",
           "size": "full",
           "aspectRatio": "20:13",
           "aspectMode": "cover",
@@ -1001,7 +1813,7 @@ def test_0 #宗教習慣
     end
 
 
-  def test_1 #居住所在地
+  def test_111 #居住所在地
 
       {  
       "type": "flex",
