@@ -51,7 +51,7 @@ return member_1 if  text == "禮儀團隊"
 
 #禮儀資訊#######################################################
 
-return test_0 if text == "喪禮服務" 
+return test_0 if text == "商品選購" 
 
 return test_0 if text == "返回重新選擇"
 return test_0 if text == "返回宗教選單"
@@ -881,7 +881,7 @@ def test_0 #契約選單
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://upload.cc/i1/2022/08/31/945jgJ.jpg"
+        "url": "https://rs.joo.com.tw/website/uploads_product/website_1660/P0166000241232_4_1342919.png?_7389"
       },
       "body": {
         "type": "box",
@@ -890,7 +890,7 @@ def test_0 #契約選單
         "contents": [
           {
             "type": "text",
-            "text": "福緣禮儀服務",
+            "text": "台中人日式衛生紙",
             "align": "center",
             "wrap": true,
             "weight": "bold",
@@ -903,7 +903,7 @@ def test_0 #契約選單
             "contents": [
               {
                 "type": "text",
-                "text": "\n以簡單尊嚴的方式\n為家人規劃一場人生的畢業典禮",
+                "text": "\n一包200抽，是市售衛生紙的2倍\n不含螢光劑，採用100%原生紙漿",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -920,7 +920,7 @@ def test_0 #契約選單
             "contents": [
               {
                 "type": "text",
-                "text": "\n契約價格：99000",
+                "text": "\n價格：100/箱",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -942,11 +942,18 @@ def test_0 #契約選單
             "type": "button",
             "action": {
               "type": "message",
-              "label": "服務內容",
-              "text": "福緣禮儀服務內容"
+              "label": "一箱",
+              "text": "衛生紙一箱"
             }
           },
-          
+           {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "二箱",
+              "text": "衛生紙二箱"
+            }
+          },
         ]
       }
     },
@@ -957,7 +964,7 @@ def test_0 #契約選單
         "size": "full",
         "aspectRatio": "15:13",
         "aspectMode": "cover",
-        "url": "https://bpic.588ku.com/art_origin_min_pic/21/12/11/298e19ebab4ada44a505167608fcdd14.jpg"
+        "url": "https://maydong-sauces.com.tw/summernote_upload/phpa60Vwq.jpg"
       },
       "body": {
         "type": "box",
@@ -966,7 +973,7 @@ def test_0 #契約選單
         "contents": [
           {
             "type": "text",
-            "text": "圓滿禮儀服務",
+            "text": "黑豆醬油",
             "align": "center",
             "wrap": true,
             "weight": "bold",
@@ -979,7 +986,7 @@ def test_0 #契約選單
             "contents": [
               {
                 "type": "text",
-                "text": "\n以莊嚴圓滿方式\n為家人規劃一場溫馨的畢業典禮",
+                "text": "\n百年歷史醞釀的好味道\n無添加甘味劑和化學香料調味",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -996,7 +1003,7 @@ def test_0 #契約選單
             "contents": [
               {
                 "type": "text",
-                "text": "\n契約價格：169000",
+                "text": "\n價格：169/瓶",
                 "align": "center",
                 "wrap": true,
                 #{}"weight": "bold",
@@ -1018,11 +1025,18 @@ def test_0 #契約選單
             "type": "button",
             "action": {
               "type": "message",
-              "label": "服務內容",
-              "text": "圓滿禮儀服務內容"
+              "label": "一瓶",
+              "text": "黑豆醬油一瓶"
             }
           },
-          
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "二瓶",
+              "text": "黑豆醬油二瓶"
+            }
+          },
         ]
       }
     },
